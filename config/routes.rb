@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
   devise_for :admins
   devise_for :users
-  root to: "home#index"
+  resources :photos, only: [:index, :show]
+  resources :users do
+  	resources :orders, except: :destroy
+  end
+  root 'photos#index'
 end
