@@ -50,4 +50,13 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'devise'
 gem 'rspec-rails', '~> 3.5'
 
-gem 'aws-sdk', '~> 2.3.0'
+# gem 'aws-sdk', '~> 2.3.0'
+
+# for aws cloud storage
+gem 'fog'
+# photo resizing
+gem "mini_magick"
+# file upload solution
+gem 'carrierwave'
+
+gem "figaro"
